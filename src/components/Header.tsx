@@ -3,6 +3,8 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState, useTransition } from "react";
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import { Flex, ToggleButton } from "@/once-ui/components"
 import styles from '@/components/Header.module.scss'
 
@@ -77,6 +79,7 @@ export const Header = () => {
                 position="fixed" zIndex={9}
                 fillWidth minHeight="80" justifyContent="center">
             </Flex>
+            <SpeedInsights/>
             <Flex style={{height: 'fit-content'}}
                 className={styles.position}
                 as="header"

@@ -17,6 +17,7 @@ export async function generateMetadata(
 	const title = home.title;
 	const description = home.description;
 	const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
+	
 
 	return {
 		title,
@@ -122,7 +123,7 @@ export default function Home(
 							</Flex>
 						</RevealFx>
 					</Flex>
-				
+
 			</Flex>
 		</Flex>
 	);

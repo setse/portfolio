@@ -6,7 +6,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Architect and Designer',
+    role:      'Architecture student',
     avatar:    '/images/avatar.jpg',
     location:  'Europe/Frankfurt',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'German','Mongolian']  // optional: Leave the array empty if you don't want to display languages
@@ -15,7 +15,7 @@ const person = {
 const newsletter = {
     display: false, // set to false to hide the newsletter form
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    description: <>Newsletter.</>
 }
 
 const social = [
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Architect, Designer and Music Producer</>,
-    subline: <>I'm Sets, a designer and music producer at <code>Rohspekt</code> </>
+    headline: <> Setsenbileg Enkhbat  </>,
+    subline: <> <code>Rohspekt</code> </>
 }
 
 const about = {
@@ -60,7 +60,7 @@ const about = {
         subItems: false
     },
     avatar: {
-        display: false
+        display: true
     },
     calendar: {
         display: false,
@@ -69,7 +69,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Sets is a Frankfurt-based designer with a passion for transforming complex challenges into simple, elegant design solutions. His work spans digital designs, architectural concepts, and creating music.</>
+        description: <>Hey, I'm Sets. <br></br>I have a passion for transforming complex challenges into simple, elegant design solutions. Interested in digital designs, architectural concepts, and creating music.</>
     },
     work: {
         display: false, // set to false to hide this section
@@ -110,46 +110,82 @@ const about = {
         institutions: [
             {
                 name: 'Technical University of Darmstadt',
-                description: <>Studied architecture</>,
-            }
+                description: <>B.Sc Architecture</>,
+            },
+            {
+                name: 'Karsruher Institute of Technology',
+                description: <>Studienkolleg</>,
+            },
+        
         ]
     },
     technical: {
-        display: false, // set to false to hide this section
+        display: true, // set to false to hide this section
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'ArchiCAD',
+                description: <>Main CAD programm I've used during my bachelor studies.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
-                        src: '/',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
+                        width: 0,
+                        height: 0
+                    }
                 ]
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+                title: 'Sketchup + Enscape',
+                description: <>Mainly used for creating 3D objects for rendering visualisations and creating simple designs more quickly.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
                         src: '/images/projects/project-01/cover-04.jpg',
                         alt: 'Project image',
-                        width: 16,
-                        height: 9
+                        width: 0,
+                        height: 0
                     },
                 ]
-            }
+            },
+                        {
+                title: 'Adobe Photoshop, Illustrator, Indesign',
+                description: <></>,
+                // optional: leave the array empty if you don't want to display images
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 0,
+                        height: 0
+                    },
+                ]
+            },
+                        {
+                title: 'Unreal Engine',
+                description: <> Used for creating VR enviroments.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 0,
+                        height: 0
+                    },
+                ]
+            },
+                        {
+                title: '3ds Max',
+                description: <>Used for creating various 3D projects.</>,
+                // optional: leave the array empty if you don't want to display images
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 0,
+                        height: 0
+                    },
+                ]
+            },
         ]
     }
 }
